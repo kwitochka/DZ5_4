@@ -1,31 +1,43 @@
 * {
-	/*line-height: 2;*/
-	font-size: 20px;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	background: #D1D1D1;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 1em;
+	line-height: 2;
 	}
 
-header {
-	margin-left: 7.5%;
-}
 
 .wrapper {
-	width: 1280px;
-	margin: -33px auto;
-	background: #fff;
-	padding: 60px;
-	box-sizing: border-box;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+header img {
+	width: 100%;
+	display: block;
 }
 
 .content_wrapper {
-	width:1160px;
+	width: 100%;
+	display: block;
+	background: #fff;
+	padding: 30px 60px;
+	box-sizing: border-box;
 }
 
 /*Text styling*/
-.center {
+h3, footer {
 	text-align: center;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: normal;
 }
 
 span {
@@ -37,32 +49,46 @@ span {
 } 
 
 /*Section styling*/
+
+.wide_elem, 
+.narrow_elem {
+	padding-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
 .wide_elem .doctors {
 	width: 45%;
 }
 
 .narrow_elem .doctors {
-	width: 29%;
+	width: 30%;
+}
+
+.wide_elem .doctors:last-child,
+.narrow_elem .doctors:last-child {
+	float: right;
+	margin-right: 0;
+}
+
+.doctors img {
+	width: 100%;
 }
 
 .doctors {
 	float: left;
-	margin-bottom: 20px;
+	margin-right: 5%;
 }
 
-.doctors:first-child, 
-.narrow_elem .doctors:nth-child(2)  {
-	margin-right: 75px;
-} 
-
-
-
 /*Clearfix*/
-.main_section:after {
+.main_section:after,
+.wide_elem::after, 
+.narrow_elem::after {
 	display: block;
 	content:'';
 	clear: both;
 }
+
 
 /*Button styling*/
 
@@ -73,6 +99,28 @@ button {
 	border-radius: 10px;
 	border: none;
 	height: 40px;
-	width: 100%;
 	margin-bottom: 20px;
+	font-weight: bold;
 }
+
+.doctors button {
+	width: 100%;
+}
+
+.facebook {
+	width: 50%;
+	display: block;
+	margin: 50px auto 20px;
+}
+
+/*Footer*/
+footer * {
+	color: #fff;
+	font-size: 0.8em;
+}
+
+
+
+
+
+
