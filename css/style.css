@@ -50,11 +50,29 @@ span {
 
 /*Section styling*/
 
-.wide_elem, 
+.main_section {
+	width: 100%;
+}
+
+.main_section img {
+	width: 100%;
+	height: 75%;
+}
+
+table, hr, td {
+	/*border: 1px solid black;*/
+	padding: 5px 0 10px;
+	border-collapse: collapse;
+}
+
+td:not(:last-child) {
+	padding-right: 40px;
+}
+
+/*.wide_elem, 
 .narrow_elem {
 	padding-bottom: 30px;
 	width: 100%;
-	box-sizing: border-box;
 }
 
 .wide_elem .doctors {
@@ -78,17 +96,16 @@ span {
 .doctors {
 	float: left;
 	margin-right: 5%;
-}
+}*/
 
 /*Clearfix*/
-.main_section:after,
-.wide_elem::after, 
-.narrow_elem::after {
+/*.main_section:after,
+{
 	display: block;
 	content:'';
 	clear: both;
 }
-
+*/
 
 /*Button styling*/
 
@@ -103,7 +120,7 @@ button {
 	font-weight: bold;
 }
 
-.doctors button {
+.main_section button {
 	width: 100%;
 }
 
